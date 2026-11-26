@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    padding: 15px 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #419b50;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#searchBook {
+    background: #4059a5;
+}
+
+ol {
+    margin-top: 35px;
+    padding-left: 0;
+    list-style: none;
+    counter-reset: books;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 24px;
+    counter-increment: books;
+}
+
+li::before {
+    content: counter(books) ") ";
+}
+
+.found {
+    background: #fff1a8;
+}
